@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".function">
+
+    <Button
+        android:id="@+id/ButtonPlay"
+        android:layout_width="233dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="47dp"
+        android:text="PLAY"
+        app:layout_constraintBottom_toTopOf="@+id/addButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inputURL" />
+
+    <Button
+        android:id="@+id/addButton"
+        android:layout_width="233dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="58dp"
+        android:text="ADD TO PLAYLIST"
+        app:layout_constraintBottom_toTopOf="@+id/buttonMyPlayList"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ButtonPlay" />
+
+    <Button
+        android:id="@+id/buttonMyPlayList"
+        android:layout_width="233dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="78dp"
+        android:text="MY PLAYLIST"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addButton" />
+
+    <EditText
+        android:id="@+id/inputURL"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginBottom="91dp"
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/ButtonPlay"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="71dp"
+        android:layout_marginBottom="92dp"
+        android:text="YoutTube URL"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toTopOf="@+id/inputURL"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
